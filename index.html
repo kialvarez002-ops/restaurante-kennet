@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+¡Obligatorio! Indica al navegador que este es un documento HTML5.
+No es una etiqueta HTML, sino una declaración.
+-->
+<html lang="es">
+<!--
+<html>: Raíz del documento.
+lang="es": Define el idioma principal de la página (español).
+Importante para:
+1. Accesibilidad (lectores de pantalla).
+2. SEO (búsquedas en español).
+3. Traducciones automáticas.
+-->
+<head>
+    <!--
+    <head>: Contiene metadatos (información técnica), enlaces a CSS/JS,
+    y el título de la página. No se muestra visualmente.
+    -->
+    <meta charset="UTF-8">
+    <!--
+    charset="UTF-8": Codificación de caracteres.
+    - UTF-8 incluye símbolos internacionales (ñ, á, ü, emojis, etc.).
+    - Evita errores de visualización con caracteres especiales.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    viewport: Configura cómo se adapta la página a dispositivos móviles.
+    width=device-width: Ajusta el ancho al dispositivo.
+    initial-scale=1.0: Sin zoom inicial (escala 100%).
+    -->
+</head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Vanguardio Roast | </title>
+<!--
+<title>: Título de la pestaña del navegador y resultado en buscadores.
+- Máx. 60 caracteres para SEO.
+-->
+<link rel="stylesheet" href="CSS/styles.css">
+<!--
+Enlaza el archivo CSS. rel="stylesheet" define la relación.
+href: Ruta relativa al archivo CSS.
+-->
+<link rel="icon" href="img/favicon.ico">
+<!--Font awesome (para íconos de redes sociales)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!--
+    <body>: Contiene TODO el contenido visible de la página.
+    -->
+    <header class="header">
+        <!--
+        <header>: Cabecera de la página o de una sección.
+        - Usualmente contiene logo, menú de navegación o buscador.
+        - class="header": Para estilos CSS (opcional pero recomendado).
+        -->
+        <div class="logo">
+            <h1>Vanguardio Roast</h1>
+            <!--
+            <h1>: Título principal (solo uno por página para SEO).
+            -->
+            <p>Sabores Que Dominan</p>
+        </div>
+        <nav class="nav">
+            <!--
+            <nav>: Menú de navegación principal.
+            - Debe contener enlaces importantes (Inicio, Menú, etc.).
+            -->
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <!--
+                href="#inicio": Enlace ancla (scroll a la sección con id="inicio").
+                -->
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="https://forms.gle/AV5YRQFWNaPcqJqM7">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!--
+    <main>: Contenido principal único del documento.
+    - Solo debe haber uno por página.
+    - No incluye cabecera, pie de página o barras laterales.
+    -->
+    <section id="inicio" class="hero">
+        <!--
+        <section>: Agrupa contenido temático relacionado.
+        - id="inicio": Identificador único para enlaces ancla.
+        - class="hero": Para estilizar esta sección como "hero" (portada).
+        -->
+        <div class="hero-content">
+            <h2>Todo un Roast</h2>
+            <!--
+            <h2>: Subtítulo (jerarquía después de <h1>).
+            - Usa <h2> a <h6> para estructurar contenidos.
+            -->
+            <p>Outfit listo, Café en mano y Actitud que domina </p>
+            <a href="https://forms.gle/AV5YRQFWNaPcqJqM7" class="btn">Reservar</a>
+            <a href="https://marea.pro/vanguardio" class="btn">Shop</a>
+            <!--
+            .btn: Clase CSS para estilizar el botón.
+            -->
+        </div>
+    </section>
+    <section id="menu" class="menu">
+        <h2>Nuestro Menú</h2>
+        <!-- Botones de filtrado -->
+<div class="menu-filters">
+    <button class="filter-btn active" data-category="Todo">Todo</button>
+    <button class="filter-btn" data-category="Selección">Selección</button>
+    <button class="filter-btn" data-category="Tentación">Tentación</button>
+    <button class="filter-btn" data-category="Bebidas">Bebidas</button>
+</div>
+      
+
+
+<!--article class="menu-category">-->
+             
+             <!-- <h3>Entradas</h3>-->
+<!-- <h3>: Subtítulo dentro de <article>. -->
+
+
+<div class="menu-items">
+    <!-- data-category : Atributo personalizado para filtrar con JS.
+         Se accede con: element.dataset.category. -->
+</div>
+<!--</article>-->
+
+</section>
+
+<div class="row">
+
+ <div class="column">
+    <img src="https://images.unsplash.com/photo-1565737570387-89501f701184?q=80&w=1012&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen restaurante 2" style="width:80%; height:20%;">
+  </div>
+
+  <div class="column">
+    <img src="https://images.unsplash.com/photo-1741177330159-af4bb05929f9?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen restaurante 3" style="width:80%; height:20%;">
+  </div>
+
+
+  <div class="column">
+    <img src="https://plus.unsplash.com/premium_photo-1681843759539-7c0ca8614e1b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen restaurante 4" style="width:80%; height:20%;">
+  </div>
+
+
+   </div>
+
+</main>
+
+<aside class="aside">
+    <!-- <aside>: Contenido secundario o relacionado indirectamente.
+         Ej.: Promociones, enlaces externos, publicidad. -->
+    <h3>Promociones</h3>
+    <p>¡Aprovecha nuestro! 2x1 Todos los martes de 1 a 3 pm. </p>
+</aside>
+
+<footer id="contacto" class="footer">
+       <div class="footer-content">
+        <!--
+          <footer>: Pie de página con información de contacto, copyright, etc.
+          - Puede usarse también al final de <article> o <section>.
+        -->
+
+        <address>
+            
+            <!--
+              <address>: Información de contacto (física, email, teléfono).
+              - Los navegadores/SEO lo asocian a datos de ubicación.
+            -->
+              <a href="https://maps.app.goo.gl/pgjLaTfdJVUwsEvv8" target="_blank" rel="noreference noopener">
+                C. Cerro de las Campanas 98, San Andres Atenco, 54040 Tlalnepantla, Méx.
+              </a>
+            <br>
+            Teléfono: <a href="tel:5621485355">+525621485355</a>
+            <!-- 
+              href="tel:+123456789": Enlace para llamar desde móviles.
+            -->
+        </address>
+
+        <!-- Copyright -->
+        <p class="copyright">&copy; Roast by Vanguardio</p>
+
+        <!-- Redes sociales -->
+        <div class="social">
+            <a href="https://www.facebook.com/kennet.Ismael/" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/kennetag?igsh=NjBrbmpzMnk1ZDFr&utm_source=qr" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://mx.linkedin.com/" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+        </div>
+
+      </div>
+    </footer>
+     <script src="js/script.js"></script>
+</body>
+</html>
